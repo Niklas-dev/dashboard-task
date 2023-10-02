@@ -20,26 +20,31 @@ export default function SideBar() {
       </Link>
       <ul className="flex flex-col gap-2 mt-4 font-medium">
         <DashboardSubRouteSelect
-          route="overview"
+          name="Overview"
+          route=""
           currentPathname={pathname}
           Icon={FaHome}
         />
         <DashboardSubRouteSelect
+          name="Orders"
           route="orders"
           currentPathname={pathname}
           Icon={FaShoppingBag}
         />
         <DashboardSubRouteSelect
+          name="Clients"
           route="clients"
           currentPathname={pathname}
           Icon={FaUsers}
         />
         <DashboardSubRouteSelect
+          name="Statistics"
           route="statistics"
           currentPathname={pathname}
           Icon={FaChartLine}
         />
         <DashboardSubRouteSelect
+          name="Management"
           route="management"
           currentPathname={pathname}
           Icon={FaUserEdit}

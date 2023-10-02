@@ -11,11 +11,17 @@ export default function NavElements() {
         <Hamburger onToggle={setShowNav} />
       </div>
       {showNav && (
-        <div className="flex lg:hidden w-56 rounded-br-xl shadow-md  absolute bg-white lg:bg-transparent top-0 left-0 lg:relative flex-col  items-start  gap-14 p-4 ">
-          <ul className="flex flex-col lg:flex-row items-start lg:items-center gap-10 text-lg font-medium mt-16">
-            <li>Home</li>
-            <li>Dashboard</li>
-            <li>Info</li>
+        <div className="flex lg:hidden w-56 rounded-br-xl shadow-md  absolute bg-white lg:bg-transparent top-0 left-0 lg:relative flex-col  items-start  gap-14 p-4">
+          <ul className="flex flex-col lg:flex-row items-start lg:items-center gap-8 text-lg font-medium mt-16 pb-4 pl-2">
+            <Link className="hover:underline" href={"/home"}>
+              Home
+            </Link>
+            <Link className="hover:underline" href={"/dashboard"}>
+              Dashboard
+            </Link>
+            <Link className="hover:underline" href={"/info"}>
+              Info
+            </Link>
           </ul>
         </div>
       )}
@@ -28,9 +34,15 @@ export default function NavElements() {
         </Link>
 
         <ul className="flex flex-row items-center gap-10 text-lg font-medium">
-          <li>Home</li>
-          <li>Dashboard</li>
-          <li>Info</li>
+          <Link className="hover:underline" href={"/home"}>
+            Home
+          </Link>
+          <Link className="hover:underline" href={"/dashboard"}>
+            Dashboard
+          </Link>
+          <Link className="hover:underline" href={"/info"}>
+            Info
+          </Link>
         </ul>
       </div>
     </>
