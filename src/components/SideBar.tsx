@@ -14,7 +14,9 @@ export default function SideBar() {
 
   return (
     <div className="w-80 h-full bg-gray-50 p-4">
-      <h2 className="text-2xl font-semibold">Dashboard</h2>
+      <Link href={"/dashboard"} className="text-2xl font-semibold">
+        Dashboard
+      </Link>
       <ul className="flex flex-col gap-2 mt-4">
         <Link
           href={"/dashboard/overview"}

@@ -14,7 +14,7 @@ export default function Home() {
           </p>
           <Link
             className="bg-primaryRed rounded-lg text-lg text-white px-3 py-2.5 mt-4 transition-colors hover:bg-hoverRed"
-            href={"/dashboard"}
+            href={"/dashboard/dashboard"}
           >
             To Dashboard
           </Link>
