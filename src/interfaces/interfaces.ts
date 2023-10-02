@@ -20,13 +20,7 @@ export interface MyProfileButtonProps {
 
 export interface DashboardInfoContainerProps {
   name: string;
-  amount: number;
-  trend: number;
-  lastMonth: number;
-}
-export interface DashboardIncomeInfoContainerProps {
-  name: string;
-  amount: number;
+  amount: string;
   trend: number;
   lastMonth: number;
 }
