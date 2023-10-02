@@ -1,13 +1,6 @@
 import { StaticImageData } from "next/image";
 import { IconType } from "react-icons";
 
-export interface DashboardSubRouteSelectProps {
-  name: string;
-  Icon: IconType;
-  route: string;
-  currentPathname: string;
-}
-
 export interface DropdownRouteSelectProps {
   Icon: IconType;
   routes: [string, string];
@@ -23,4 +16,17 @@ export interface RouteSelectProps {
 
 export interface MyProfileButtonProps {
   image: StaticImageData;
+}
+
+export interface DashboardInfoContainerProps {
+  name: string;
+  amount: number;
+  trend: number;
+  lastMonth: number;
+}
+export interface DashboardIncomeInfoContainerProps {
+  name: string;
+  amount: number;
+  trend: number;
+  lastMonth: number;
 }
