@@ -2,7 +2,7 @@ import { TransactionRowProps } from "@/interfaces/interfaces";
 
 export default function TransactionRow({ transaction }: TransactionRowProps) {
   return (
-    <tr key={transaction.transaction.id} className=" cursor-pointer ">
+    <tr className=" cursor-pointer ">
       <th
         scope="row"
         className="px-6 py-4 font-medium  whitespace-nowrap  capitalize rounded-l-xl border-2 border-r-0 border-gray-200 h-20"

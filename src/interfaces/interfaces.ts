@@ -42,3 +42,18 @@ export interface TransactionData {
   date: string;
   status: string;
 }
+
+export interface PerformanceListProps {
+  data: PerformanceData[];
+}
+
+export interface PerformanceData {
+  service: string;
+  image: StaticImageData;
+  status: string;
+  profit: number;
+}
+
+export interface PerformanceRowProps {
+  performance: PerformanceData;
+}

@@ -2,8 +2,9 @@
 import DashboardIncomeInfoContainer from "@/components/DashboardIncomeInfoContainer";
 import DashboardInfoContainer from "@/components/DashboardInfoContainer";
 import DashboardRouteSwitch from "@/components/DashboardRouteSwitch";
+import PerformanceListContainer from "@/components/PerformanceListContainer";
 import TransactionListContainer from "@/components/TransactionListContainer";
-import { transactionData } from "@/mock-data/data";
+import { performanceData, transactionData } from "@/mock-data/data";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -35,7 +36,7 @@ export default function Page() {
       </div>
       <div className="flex flex-row flex-wrap justify-between gap-6 pr-28">
         <TransactionListContainer data={transactionData} />
-        <TransactionListContainer data={transactionData} />
+        <PerformanceListContainer data={performanceData} />
       </div>
     </div>
   );
