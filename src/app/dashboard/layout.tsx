@@ -1,6 +1,7 @@
 import NavBar from "@/components/NavBar";
 import "../../styles/globals.css";
 import type { Metadata } from "next";
+import SideBar from "@/components/SideBar";
 
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -15,8 +16,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <NavBar />
-        {children}
+        <header className="absolute w-screen">
+          <NavBar />
+        </header>
+        <div className="flex flex-row h-screen w-screen pt-20">
+          <SideBar />
+          {children}
+        </div>
       </body>
     </html>
   );
