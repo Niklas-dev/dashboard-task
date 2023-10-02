@@ -17,7 +17,7 @@ export default function SideBar() {
       <h2 className="text-2xl font-semibold">Dashboard</h2>
       <ul className="flex flex-col gap-2 mt-4">
         <Link
-          href={"overview"}
+          href={"/dashboard/overview"}
           className={`${
             pathname == "overview" && "bg-[#242424] text-white"
           } py-1.5 px-3 rounded-md transition-transform hover:translate-x-1 cursor-pointer flex flex-row items-center gap-3`}
@@ -26,7 +26,7 @@ export default function SideBar() {
           Overview
         </Link>
         <Link
-          href={"orders"}
+          href={"/dashboard/orders"}
           className={`${
             pathname == "orders" && "bg-[#242424] text-white"
           } py-1.5 px-3 rounded-md transition-transform hover:translate-x-1 cursor-pointer flex flex-row items-center gap-3`}
@@ -35,7 +35,7 @@ export default function SideBar() {
           Orders
         </Link>
         <Link
-          href={"clients"}
+          href={"/dashboard/clients"}
           className={`${
             pathname == "clients" && "bg-[#242424] text-white"
           } py-1.5 px-3 rounded-md transition-transform hover:translate-x-1 cursor-pointer flex flex-row items-center gap-3`}
@@ -44,7 +44,7 @@ export default function SideBar() {
           Clients
         </Link>
         <Link
-          href={"statistics"}
+          href={"/dashboard/statistics"}
           className={`${
             pathname == "statistics" && "bg-[#242424] text-white"
           } py-1.5 px-3 rounded-md transition-transform hover:translate-x-1 cursor-pointer flex flex-row items-center gap-3`}
@@ -53,7 +53,7 @@ export default function SideBar() {
           Statistics
         </Link>
         <Link
-          href={"management"}
+          href={"/dashboard/management"}
           className={`${
             pathname == "management" && "bg-[#242424] text-white"
           } py-1.5 px-3 rounded-md transition-transform hover:translate-x-1 cursor-pointer flex flex-row items-center gap-3`}
