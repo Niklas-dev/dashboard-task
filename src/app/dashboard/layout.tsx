@@ -16,12 +16,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header className="absolute w-screen">
-          <NavBar />
-        </header>
-        <div className="flex flex-row h-screen w-screen pt-20">
+        <div className="flex flex-row h-screen w-screen">
           <SideBar />
-          <main className="p-2">{children}</main>
+          <main className="w-screen">
+            <header className="w-full">
+              <NavBar />
+            </header>
+            <div className="px-4">{children}</div>
+          </main>
         </div>
       </body>
     </html>

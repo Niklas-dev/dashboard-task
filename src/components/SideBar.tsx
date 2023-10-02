@@ -1,5 +1,5 @@
 "use client";
-
+import Avatar from "../assets/avatar.png";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import DashboardSubRouteSelect from "./DashboardSubRouteSelect";
@@ -9,47 +9,63 @@ import {
   FaShoppingBag,
   FaUserEdit,
   FaUsers,
+  FaChartPie,
+  FaChevronDown,
+  FaChevronUp,
+  FaServicestack,
+  FaBox,
+  FaMoneyBill,
+  FaFacebookMessenger,
+  FaCanadianMapleLeaf,
+  FaCross,
+  FaDoorClosed,
 } from "react-icons/fa";
+import DropdownRouteSelect from "./DropdownRouteSelect";
+import RouteSelect from "./RouteSelect";
+import MyProfileButton from "./MyProfileButton";
 export default function SideBar() {
   const pathname = usePathname().substring(11); // get only relative path e.g. overview
 
   return (
-    <div className="w-80 h-full bg-gray-50 p-4">
-      <Link href={"/dashboard"} className="text-2xl font-semibold">
-        Dashboard
+    <div className="w-96 h-fit rounded-r-2xl drop-shadow-lg bg-gray-100 p-4 pb-6 flex flex-col items-center gap-6">
+      <Link
+        href={"/"}
+        className="bg-primaryRed px-5 py-2.5 w-fit rounded-xl text-white text-2xl font-medium mt-4"
+      >
+        evvent.no
       </Link>
-      <ul className="flex flex-col gap-2 mt-4 font-medium">
-        <DashboardSubRouteSelect
-          name="Overview"
-          route=""
-          currentPathname={pathname}
-          Icon={FaHome}
+
+      <DropdownRouteSelect
+        Icon={FaChartPie}
+        routes={["/dashboard/overview", "/dashboard/transactions"]}
+        name="Dashboard"
+      >
+        <Link href={"/dashboard/overview"}>Overview</Link>
+        <Link href={"/dashboard/transactions"}>Transaction List</Link>
+      </DropdownRouteSelect>
+      <DropdownRouteSelect
+        Icon={FaBox}
+        routes={["/dashboard/services/create", "/dashboard/services/list"]}
+        name="Services"
+      >
+        <Link href={"/dashboard/services/create"}>Create</Link>
+        <Link href={"/dashboard/services/list"}>List</Link>
+      </DropdownRouteSelect>
+      <RouteSelect Icon={FaChartLine} name="Analytics" route="analytics" />
+      <RouteSelect Icon={FaMoneyBill} name="Earning" route="earnings" />
+      <div className="w-full h-[2px] mt-10 px-3">
+        <div className="w-full h-full bg-gray-300 "></div>
+      </div>
+      <div className=" flex flex-col items-center gap-2">
+        <MyProfileButton image={Avatar} />
+        <RouteSelect
+          Icon={FaFacebookMessenger}
+          name="My Messages"
+          route="messages"
         />
-        <DashboardSubRouteSelect
-          name="Orders"
-          route="orders"
-          currentPathname={pathname}
-          Icon={FaShoppingBag}
-        />
-        <DashboardSubRouteSelect
-          name="Clients"
-          route="clients"
-          currentPathname={pathname}
-          Icon={FaUsers}
-        />
-        <DashboardSubRouteSelect
-          name="Statistics"
-          route="statistics"
-          currentPathname={pathname}
-          Icon={FaChartLine}
-        />
-        <DashboardSubRouteSelect
-          name="Management"
-          route="management"
-          currentPathname={pathname}
-          Icon={FaUserEdit}
-        />
-      </ul>
+        <RouteSelect Icon={FaShoppingBag} name="My Orders" route="orders" />
+        <RouteSelect Icon={FaDoorClosed} name="Log out" route="logout" />
+      </div>
     </div>
   );
 }
