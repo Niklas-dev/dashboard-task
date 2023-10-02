@@ -6,7 +6,7 @@ export default function UserInfoElements() {
     <div className="flex flex-row items-center gap-4">
       <button className="h-10 w-fit px-4 rounded-lg flex items-center justify-center border border-gray-300 gap-2 text-lg outline-none transition-colors hover:bg-gray-100">
         <FaPlus size={"1rem"} />
-        Add Services
+        <span className="hidden md:flex">Add Services</span>
       </button>
 
       <button className="h-10 w-10 rounded-full flex items-center justify-center border border-gray-300 transition-colors hover:bg-gray-100">
