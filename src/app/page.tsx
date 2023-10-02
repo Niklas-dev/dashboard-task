@@ -13,7 +13,7 @@ export default function Home() {
             When you click the button below you will get to the dashboard page.
           </p>
           <Link
-            className="bg-primaryRed rounded-lg text-white px-3 py-2.5 mt-4"
+            className="bg-primaryRed rounded-lg text-lg text-white px-3 py-2.5 mt-4 transition-colors hover:bg-hoverRed"
             href={"/dashboard"}
           >
             To Dashboard
