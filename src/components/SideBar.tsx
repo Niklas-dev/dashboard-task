@@ -11,7 +11,7 @@ export default function SideBar() {
       <Link href={"/dashboard"} className="text-2xl font-semibold">
         Dashboard
       </Link>
-      <ul className="flex flex-col gap-2 mt-4">
+      <ul className="flex flex-col gap-2 mt-4 font-medium">
         <DashboardSubRouteSelect route="overview" currentPathname={pathname} />
         <DashboardSubRouteSelect route="orders" currentPathname={pathname} />
         <DashboardSubRouteSelect route="clients" currentPathname={pathname} />
