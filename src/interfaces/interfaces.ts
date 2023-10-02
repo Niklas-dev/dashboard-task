@@ -29,6 +29,10 @@ export interface TransactionListProps {
   data: TransactionData[];
 }
 
+export interface TransactionRowProps {
+  transaction: TransactionData;
+}
+
 export interface TransactionData {
   transaction: {
     name: string;
