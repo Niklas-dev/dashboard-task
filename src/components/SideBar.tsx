@@ -22,7 +22,7 @@ export default function SideBar() {
   return (
     <>
       {show ? (
-        <div className="w-96 h-fit rounded-r-2xl drop-shadow-lg bg-gray-100 p-4 pb-6 flex flex-col items-center gap-6 absolute md:relative z-20">
+        <div className="w-96 h-fit rounded-r-2xl drop-shadow-lg bg-gray-100 p-4 pb-6 flex flex-col items-center gap-6 absolute md:relative z-20 ">
           <div className="absolute top-2 left-2">
             <Hamburger toggled={show} onToggle={setShow} />
           </div>
@@ -66,7 +66,7 @@ export default function SideBar() {
           </div>
         </div>
       ) : (
-        <div className="bg-gray-100 p-2 h-fit rounded-br-2xl">
+        <div className="bg-gray-100 p-2 h-fit rounded-br-2xl absolute z-20">
           <Hamburger toggled={show} onToggle={setShow} />
         </div>
       )}

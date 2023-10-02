@@ -24,3 +24,17 @@ export interface DashboardInfoContainerProps {
   trend: number;
   lastMonth: number;
 }
+
+export interface TransactionListProps {
+  data: TransactionData[];
+}
+
+export interface TransactionData {
+  transaction: {
+    name: string;
+    id: string;
+  };
+  amount: number;
+  date: string;
+  status: string;
+}

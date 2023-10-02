@@ -18,7 +18,7 @@ export default function RootLayout({
       <body>
         <div className="flex flex-row h-screen w-screen">
           <SideBar />
-          <main className="w-screen">
+          <main className="w-screen overflow-x-hidden">
             <header className="w-full">
               <NavBar />
             </header>
