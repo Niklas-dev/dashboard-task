@@ -24,7 +24,7 @@ export default function NavElements() {
           className="bg-primaryRed text-white px-3 py-2.5 rounded-xl text-xl font-medium "
           href={"/"}
         >
-          EVVENT
+          evvent.
         </Link>
 
         <ul className="flex flex-row items-center gap-10 text-lg">
