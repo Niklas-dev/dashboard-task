@@ -3,14 +3,12 @@ import { FaChevronRight } from "react-icons/fa";
 import { PerformanceListProps } from "@/interfaces/interfaces";
 import PerformanceRow from "./PerformanceRow";
 import PerformanceTableHead from "./PerformanceTableHead";
+import ListHeader from "./ListHeader";
 
 export default function PerformanceList({ data }: PerformanceListProps) {
   return (
-    <div className="border-gray-200  cursor-pointer border-2 rounded-xl flex flex-col justify-start flex-grow h-[40rem] overflow-y-scroll overflow-x-hidden">
-      <div className="flex flex-row justify-between items-center sticky top-0 bg-white p-6 hover:bg-gray-50 transition-colors">
-        <h3 className="font-semibold text-xl">Transaction List</h3>{" "}
-        <FaChevronRight />
-      </div>
+    <div className="border-gray-200  cursor-pointer border-2 rounded-xl flex flex-col justify-start flex-grow md:flex-shrink h-[40rem] overflow-y-scroll overflow-x-hidden">
+      <ListHeader name="Performance List (Monthly)" route="performances" />
       <table className="w-full text-sm text-left border-separate border-spacing-y-3 mt-5 p-3 md:p-6 ">
         <PerformanceTableHead />
         <tbody className="">

@@ -57,3 +57,7 @@ export interface PerformanceData {
 export interface PerformanceRowProps {
   performance: PerformanceData;
 }
+export interface ListHeaderProps {
+  name: string;
+  route: string;
+}
