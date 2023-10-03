@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={noto.className}>{children}</body>
+      <body className={`${noto.className} overflow-x-hidden`}>{children}</body>
     </html>
   );
 }
