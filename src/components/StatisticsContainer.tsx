@@ -1,3 +1,4 @@
+"use client";
 import { StatisticsContainerProps } from "@/interfaces/interfaces";
 import Link from "next/link";
 import { FaDownload } from "react-icons/fa";

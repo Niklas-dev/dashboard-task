@@ -1,4 +1,3 @@
-"use client";
 import DashboardIncomeInfoContainer from "@/components/DashboardIncomeInfoContainer";
 import DashboardInfoContainer from "@/components/DashboardInfoContainer";
 import DashboardRouteSwitch from "@/components/DashboardRouteSwitch";
@@ -7,7 +6,10 @@ import StatisticsContainer from "@/components/StatisticsContainer";
 import TransactionListContainer from "@/components/TransactionListContainer";
 import { performanceData, statData, transactionData } from "@/mock-data/data";
 import { Metadata } from "next";
-
+export const metadata: Metadata = {
+  title: "Dashboard | Overview",
+  description: "The Sub Page Overview",
+};
 export default function Page() {
   return (
     <div className="p-2 flex flex-col gap-5">
