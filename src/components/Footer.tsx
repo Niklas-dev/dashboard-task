@@ -1,6 +1,7 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import FooterSiteLink from "./FooterSiteLink";
 import FooterLinkWrapper from "./FooterLinkWrapper";
+import FooterSocialLink from "./FooterSocialLink";
 
 export default function Footer() {
   return (
@@ -12,21 +13,26 @@ export default function Footer() {
             e.
           </div>
           <div className="flex flex-col mt-4 gap-2 text-lg font-normal ">
-            <a href="" className="flex flex-row gap-3 items-center">
-              <FaFacebook />
-              Facebook
-            </a>
-            <a href="" className="flex flex-row gap-3 items-center">
-              <FaTwitter />
-              Twitter
-            </a>
-            <a href="" className="flex flex-row gap-3 items-center">
-              <FaInstagram /> Instagram
-            </a>
-            <a href="" className="flex flex-row gap-3 items-center">
-              <FaYoutube />
-              Youtube
-            </a>
+            <FooterSocialLink
+              route="https://www.facebook.com/"
+              name="Facebook"
+              Icon={FaFacebook}
+            />
+            <FooterSocialLink
+              route="https://twitter.com/"
+              name="Twitter"
+              Icon={FaTwitter}
+            />
+            <FooterSocialLink
+              route="https://www.instagram.com/"
+              name="Instagram"
+              Icon={FaInstagram}
+            />
+            <FooterSocialLink
+              route="https://www.youtube.com/"
+              name="Youtube"
+              Icon={FaYoutube}
+            />
           </div>
         </div>
 

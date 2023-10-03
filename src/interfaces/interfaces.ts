@@ -80,6 +80,10 @@ export interface FooterSiteLinkProps {
   name: string;
 }
 
+export interface FooterSocialLinkProps extends FooterSiteLinkProps {
+  Icon: IconType;
+}
+
 export interface FooterLinkWrapperProps {
   children: React.ReactNode[] | React.ReactNode;
   name: string;
