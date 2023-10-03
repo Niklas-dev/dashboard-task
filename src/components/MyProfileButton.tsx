@@ -9,7 +9,7 @@ export default function MyProfileButton({ image }: MyProfileButtonProps) {
       >
         <Link
           href={`/dashboard/profile`}
-          className="flex flex-row items-center gap-3"
+          className="flex flex-row items-center gap-3 hover:underline"
         >
           <Image
             className="h-7 w-7 rounded-full"

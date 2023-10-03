@@ -57,7 +57,6 @@ export default function Footer() {
         </FooterLinkWrapper>
 
         <FooterLinkWrapper name="Policy">
-          {" "}
           <FooterSiteLink route="terms" name="Terms & Conditions" />
           <FooterSiteLink route="privacy-policy" name="Privacy Policy" />
           <FooterSiteLink route="payment-policy" name="Payment Policy" />

@@ -38,16 +38,27 @@ export default function SideBar() {
             routes={["/dashboard/overview", "/dashboard/transactions"]}
             name="Dashboard"
           >
-            <Link href={"/dashboard/overview"}>Overview</Link>
-            <Link href={"/dashboard/transactions"}>Transaction List</Link>
+            <Link className="hover:underline" href={"/dashboard/overview"}>
+              Overview
+            </Link>
+            <Link className="hover:underline" href={"/dashboard/transactions"}>
+              Transaction List
+            </Link>
           </DropdownRouteSelect>
           <DropdownRouteSelect
             Icon={FaBox}
             routes={["/dashboard/services/create", "/dashboard/services/list"]}
             name="Services"
           >
-            <Link href={"/dashboard/services/create"}>Create</Link>
-            <Link href={"/dashboard/services/list"}>List</Link>
+            <Link
+              className="hover:underline"
+              href={"/dashboard/services/create"}
+            >
+              Create
+            </Link>
+            <Link className="hover:underline" href={"/dashboard/services/list"}>
+              List
+            </Link>
           </DropdownRouteSelect>
           <RouteSelect Icon={FaChartLine} name="Analytics" route="analytics" />
           <RouteSelect Icon={FaMoneyBill} name="Earning" route="earnings" />

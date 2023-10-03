@@ -10,7 +10,7 @@ export default function RouteSelect({ Icon, name, route }: RouteSelectProps) {
       >
         <Link
           href={route == "logout" ? "/logout" : `/dashboard/${route}`}
-          className="flex flex-row items-center gap-3"
+          className="flex flex-row items-center gap-3 hover:underline"
         >
           <Icon /> {name}
         </Link>{" "}
