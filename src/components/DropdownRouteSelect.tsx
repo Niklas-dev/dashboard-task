@@ -2,7 +2,7 @@ import { DropdownRouteSelectProps } from "@/interfaces/interfaces";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { FaChartPie, FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 export default function DropdownRouteSelect({
   Icon,

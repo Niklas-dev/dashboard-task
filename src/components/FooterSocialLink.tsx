@@ -1,5 +1,4 @@
 import { FooterSocialLinkProps } from "@/interfaces/interfaces";
-import Link from "next/link";
 
 export default function FooterSocialLink({
   route,

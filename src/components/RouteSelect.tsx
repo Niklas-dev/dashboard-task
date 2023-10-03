@@ -1,6 +1,5 @@
 import { RouteSelectProps } from "@/interfaces/interfaces";
 import Link from "next/link";
-import { FaChartPie, FaChevronUp, FaChevronDown } from "react-icons/fa";
 
 export default function RouteSelect({ Icon, name, route }: RouteSelectProps) {
   return (
