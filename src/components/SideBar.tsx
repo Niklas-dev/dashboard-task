@@ -1,6 +1,5 @@
 "use client";
 import Avatar from "../assets/avatar.png";
-import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Hamburger from "hamburger-react";
 import {

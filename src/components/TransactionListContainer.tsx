@@ -1,6 +1,4 @@
 import { TransactionListProps } from "@/interfaces/interfaces";
-import { Divide } from "hamburger-react";
-import { FaChevronRight } from "react-icons/fa";
 import TransactionRow from "./TransactionRow";
 import TransactionTableHead from "./TransactionTableHead";
 import ListHeader from "./ListHeader";
