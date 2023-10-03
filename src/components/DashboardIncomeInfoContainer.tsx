@@ -1,4 +1,5 @@
 import { DashboardInfoContainerProps } from "@/interfaces/interfaces";
+import Link from "next/link";
 import { FaChevronRight, FaChartLine } from "react-icons/fa";
 
 export default function DashboardIncomeInfoContainer({
@@ -8,7 +9,10 @@ export default function DashboardIncomeInfoContainer({
   trend,
 }: DashboardInfoContainerProps) {
   return (
-    <div className="border-gray-200 hover:bg-gray-50 transition-colors cursor-pointer border-2 w-96 h-48 rounded-xl p-6 flex flex-col justify-between">
+    <Link
+      href={"/dashboard/earnings"}
+      className="border-gray-200 hover:bg-gray-50 transition-colors cursor-pointer border-2 w-96 h-48 rounded-xl p-6 flex flex-col justify-between"
+    >
       <div className="flex flex-row justify-between items-center">
         <h3 className="font-semibold text-xl">{name}</h3> <FaChevronRight />
       </div>
@@ -35,6 +39,6 @@ export default function DashboardIncomeInfoContainer({
           <p className="text-green-800 font-bold"> {lastMonth} NOK</p>
         </span>
       </div>
-    </div>
+    </Link>
   );
 }
