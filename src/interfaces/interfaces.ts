@@ -74,3 +74,13 @@ export interface UserProfileAvatarProps {
 export interface StatisticsChartProps {
   data: object[];
 }
+
+export interface FooterSiteLinkProps {
+  route: string;
+  name: string;
+}
+
+export interface FooterLinkWrapperProps {
+  children: React.ReactNode[] | React.ReactNode;
+  name: string;
+}

@@ -40,7 +40,7 @@ export default function StatisticsContainer({
       <div className="flex flex-row justify-center items-center mt-8">
         <Link
           href={"/dashboard/statistics"}
-          className="flex flex-row gap-2 items-center border-primaryRed border hover:bg-hoverRed transition-colors text-primaryRed px-5 py-2 rounded-lg font-semibold"
+          className="flex flex-row gap-2 items-center border-primaryRed border hover:bg-hoverRed hover:bg-opacity-20 transition-colors text-primaryRed px-5 py-2 rounded-lg font-semibold"
         >
           See more Statistics
         </Link>

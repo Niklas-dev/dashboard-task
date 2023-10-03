@@ -1,4 +1,6 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import FooterSiteLink from "./FooterSiteLink";
+import FooterLinkWrapper from "./FooterLinkWrapper";
 
 export default function Footer() {
   return (
@@ -27,119 +29,35 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-6 text-lg">
-          <h4 className="text-lg font-bold">Home</h4>
-          <div className="flex flex-col gap-3 text-lg font-normal ">
-            <a
-              href=""
-              className="flex flex-row gap-3 items-center text-base hover:underline"
-            >
-              Medical Assistant
-            </a>
-          </div>
-        </div>
-        <div className="flex flex-col gap-6 text-lg">
-          <h4 className="text-lg font-bold">Services</h4>
-          <div className="flex flex-col gap-3 text-lg font-normal ">
-            <a
-              href=""
-              className="flex flex-row gap-3 items-center text-base hover:underline"
-            >
-              Photography
-            </a>
-            <a
-              href=""
-              className="flex flex-row gap-3 items-center text-base hover:underline"
-            >
-              Catering
-            </a>
-            <a
-              href=""
-              className="flex flex-row gap-3 items-center text-base hover:underline"
-            >
-              Henna
-            </a>
-            <a
-              href=""
-              className="flex flex-row gap-3 items-center text-base hover:underline"
-            >
-              Hairstyling
-            </a>
-          </div>
-        </div>
-        <div className="flex flex-col gap-6 text-lg">
-          <h4 className="text-lg font-bold">Dashboard</h4>
-          <div className="flex flex-col gap-3 text-lg font-normal ">
-            <a href="" className="flex flex-row gap-3 items-center text-base">
-              Dashboard
-            </a>
-            <a
-              href=""
-              className="flex flex-row gap-3 items-center text-base hover:underline"
-            >
-              Service
-            </a>
-            <a
-              href=""
-              className="flex flex-row gap-3 items-center text-base hover:underline"
-            >
-              Analytics
-            </a>
-            <a
-              href=""
-              className="flex flex-row gap-3 items-center text-base hover:underline"
-            >
-              Wallet
-            </a>
-            <a
-              href=""
-              className="flex flex-row gap-3 items-center text-base hover:underline"
-            >
-              My Profile
-            </a>
-            <a
-              href=""
-              className="flex flex-row gap-3 items-center text-base hover:underline"
-            >
-              My Messages
-            </a>
-          </div>
-        </div>
-        <div className="flex flex-col gap-6 text-lg">
-          <h4 className="text-lg font-bold">Policy</h4>
-          <div className="flex flex-col gap-3 text-lg font-normal ">
-            <a
-              href=""
-              className="flex flex-row gap-3 items-center text-base hover:underline"
-            >
-              Terms & Conditions
-            </a>
-            <a
-              href=""
-              className="flex flex-row gap-3 items-center text-base hover:underline"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href=""
-              className="flex flex-row gap-3 items-center text-base hover:underline"
-            >
-              Payment Policy
-            </a>
-            <a
-              href=""
-              className="flex flex-row gap-3 items-center text-base hover:underline"
-            >
-              Booking Policy
-            </a>
-            <a
-              href=""
-              className="flex flex-row gap-3 items-center text-base hover:underline"
-            >
-              FAQ
-            </a>
-          </div>
-        </div>
+
+        <FooterLinkWrapper name="Home">
+          <FooterSiteLink route="medical-assistant" name="Medical Assistant" />
+        </FooterLinkWrapper>
+
+        <FooterLinkWrapper name="Services">
+          <FooterSiteLink route="photography" name="Photography" />
+          <FooterSiteLink route="catering" name="Catering" />
+          <FooterSiteLink route="henna" name="Henna" />
+          <FooterSiteLink route="hairstyling" name="Hairstyling" />
+        </FooterLinkWrapper>
+
+        <FooterLinkWrapper name="Dashboard">
+          <FooterSiteLink route="dashboard" name="Dashboard" />
+          <FooterSiteLink route="dashboard/services/list" name="Service" />
+          <FooterSiteLink route="dashboard/analytics" name="Analytics" />
+          <FooterSiteLink route="wallet" name="Wallet" />
+          <FooterSiteLink route="dashboard/profile" name="My Profile" />
+          <FooterSiteLink route="dashboard/messages" name="My Messages" />
+        </FooterLinkWrapper>
+
+        <FooterLinkWrapper name="Policy">
+          {" "}
+          <FooterSiteLink route="terms" name="Terms & Conditions" />
+          <FooterSiteLink route="privacy-policy" name="Privacy Policy" />
+          <FooterSiteLink route="payment-policy" name="Payment Policy" />
+          <FooterSiteLink route="booking-policy" name="Booking Policy" />
+          <FooterSiteLink route="faq" name="FAQ" />
+        </FooterLinkWrapper>
       </div>
     </footer>
   );
