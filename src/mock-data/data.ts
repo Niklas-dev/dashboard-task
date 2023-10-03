@@ -28,6 +28,33 @@ export const transactionData: TransactionData[] = [
     status: "Pending",
     date: "20. Sep 2023",
   },
+  {
+    transaction: {
+      name: "Sophie",
+      id: "234-343-224",
+    },
+    amount: 1000,
+    status: "Pending",
+    date: "20. Sep 2023",
+  },
+  {
+    transaction: {
+      name: "Sophie",
+      id: "234-352-224",
+    },
+    amount: 1000,
+    status: "Pending",
+    date: "20. Sep 2023",
+  },
+  {
+    transaction: {
+      name: "Sophie",
+      id: "234-312-224",
+    },
+    amount: 1000,
+    status: "Pending",
+    date: "20. Sep 2023",
+  },
 ];
 
 export const performanceData: PerformanceData[] = [

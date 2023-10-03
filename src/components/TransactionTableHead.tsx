@@ -1,6 +1,6 @@
 export default function TransactionTableHead() {
   return (
-    <thead className="text-base text-black bg-gray-100   ">
+    <thead className="text-base text-black bg-gray-100 ">
       <tr>
         <th scope="col" className="px-6 py-3 rounded-l-xl text-lg font-medium">
           Transaction
