@@ -1,3 +1,4 @@
+import DashboardReturnButton from "@/components/DashboardReturnButton";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -5,5 +6,12 @@ export const metadata: Metadata = {
   description: "The Sub Page Services",
 };
 export default function page() {
-  return <div>List</div>;
+  return (
+    <div className="p-2 flex flex-col gap-5 pb-8">
+      <h1 className="text-4xl font-semibold mt-20">
+        Dashboard - List Services
+      </h1>
+      <DashboardReturnButton />
+    </div>
+  );
 }
