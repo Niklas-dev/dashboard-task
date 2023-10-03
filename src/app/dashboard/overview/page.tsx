@@ -6,6 +6,7 @@ import PerformanceListContainer from "@/components/PerformanceListContainer";
 import StatisticsContainer from "@/components/StatisticsContainer";
 import TransactionListContainer from "@/components/TransactionListContainer";
 import { performanceData, statData, transactionData } from "@/mock-data/data";
+import { Metadata } from "next";
 
 export default function Page() {
   return (

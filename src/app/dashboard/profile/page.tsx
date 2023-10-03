@@ -1,9 +1,9 @@
 import { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "Dashboard | Orders",
-  description: "The Sub Page Orders",
-};
 
+export const metadata: Metadata = {
+  title: "Dashboard | Profile",
+  description: "The Sub Page Profile",
+};
 export default function Page() {
-  return <div>Orders</div>;
+  return <div>Profile</div>;
 }
