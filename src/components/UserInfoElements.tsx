@@ -1,5 +1,4 @@
-import { FaBell, FaChevronDown, FaSearch, FaPlus } from "react-icons/fa";
-import Image from "next/image";
+import { FaBell, FaSearch, FaPlus } from "react-icons/fa";
 import Avatar from "../assets/avatar.png";
 import UserProfileAvatar from "./UserProfileAvatar";
 export default function UserInfoElements() {

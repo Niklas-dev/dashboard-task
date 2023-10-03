@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Dashboard | Performances",
   description: "The Sub Page Performances",
 };
+
 export default function Page() {
   return (
     <div className="p-2 flex flex-col gap-5 pb-8">

@@ -1,18 +1,6 @@
-"use client";
 import { StatisticsContainerProps } from "@/interfaces/interfaces";
 import Link from "next/link";
 import { FaDownload } from "react-icons/fa";
-import {
-  ResponsiveContainer,
-  AreaChart,
-  CartesianGrid,
-  XAxis,
-  YAxis,
-  Tooltip,
-  Area,
-  PolarGrid,
-  Line,
-} from "recharts";
 import StatisticsChart from "./StatisticsChart";
 
 export default function StatisticsContainer({

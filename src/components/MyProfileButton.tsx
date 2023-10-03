@@ -1,6 +1,7 @@
 import { MyProfileButtonProps } from "@/interfaces/interfaces";
 import Link from "next/link";
 import Image from "next/image";
+
 export default function MyProfileButton({ image }: MyProfileButtonProps) {
   return (
     <div className="mt-8 w-56 ">

@@ -1,5 +1,3 @@
-import { FaChevronRight } from "react-icons/fa";
-
 import { PerformanceListProps } from "@/interfaces/interfaces";
 import PerformanceRow from "./PerformanceRow";
 import PerformanceTableHead from "./PerformanceTableHead";

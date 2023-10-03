@@ -1,5 +1,6 @@
 import { PerformanceRowProps } from "@/interfaces/interfaces";
 import Image from "next/image";
+
 export default function PerformanceRow({ performance }: PerformanceRowProps) {
   return (
     <tr className=" cursor-pointer ">
