@@ -36,7 +36,7 @@ export default function Page() {
         <TransactionListContainer data={transactionData} />
         <PerformanceListContainer data={performanceData} />
       </div>
-      <div className="flex flex-col pr-28">
+      <div className="flex flex-col pr-2 md:pr-10 lg:pr-28 pb-8">
         <StatisticsContainer data={statData} />
       </div>
     </div>
