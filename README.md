@@ -1,3 +1,6 @@
+![image](https://github.com/Niklas-dev/dashboard-task/assets/84782843/481a5895-c733-4d29-b12c-28c79087d62a)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
