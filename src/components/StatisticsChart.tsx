@@ -1,3 +1,4 @@
+"use client";
 import { StatisticsChartProps } from "@/interfaces/interfaces";
 import {
   ResponsiveContainer,

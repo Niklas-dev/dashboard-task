@@ -9,7 +9,7 @@ export default function FooterSocialLink({
     <a
       target="_blank"
       href={route}
-      className="flex flex-row gap-3 items-center"
+      className="flex flex-row gap-3 items-center hover:underline"
     >
       <Icon />
       {name}
