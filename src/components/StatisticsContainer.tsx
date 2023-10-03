@@ -49,7 +49,7 @@ export default function StatisticsContainer({
             <defs>
               <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="5%" stopColor="#ED1E79" stopOpacity={1} />
-                <stop offset="95%" stopColor="#FFFFFF" stopOpacity={0.9} />
+                <stop offset="100%" stopColor="#FFFFFF" stopOpacity={1} />
               </linearGradient>
             </defs>
             <CartesianGrid strokeDasharray="5 3" />
