@@ -1,6 +1,7 @@
 import { FaBell, FaSearch, FaPlus } from "react-icons/fa";
 import Avatar from "../assets/avatar.png";
 import UserProfileAvatar from "./UserProfileAvatar";
+
 export default function UserInfoElements() {
   return (
     <div className="flex flex-row items-center gap-4">
