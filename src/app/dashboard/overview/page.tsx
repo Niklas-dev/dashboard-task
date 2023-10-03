@@ -15,18 +15,21 @@ export default function Page() {
       <DashboardRouteSwitch />
       <div className="mt-12 flex flex-row flex-wrap gap-6">
         <DashboardInfoContainer
+          route="services"
           name="Active Services"
           amount={"24"}
           lastMonth={15}
           trend={+60}
         />
         <DashboardInfoContainer
+          route="bookings"
           name="Total Active Booking"
           amount={"10"}
           lastMonth={15}
           trend={-33}
         />
         <DashboardIncomeInfoContainer
+          route="income"
           name="Total Income"
           amount={"50k"}
           lastMonth={25000}

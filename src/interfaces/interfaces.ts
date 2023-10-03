@@ -19,6 +19,7 @@ export interface MyProfileButtonProps {
 }
 
 export interface DashboardInfoContainerProps {
+  route: string;
   name: string;
   amount: string;
   trend: number;
