@@ -10,6 +10,7 @@ import {
   FaMoneyBill,
   FaFacebookMessenger,
   FaDoorClosed,
+  FaLink,
 } from "react-icons/fa";
 import DropdownRouteSelect from "./DropdownRouteSelect";
 import RouteSelect from "./RouteSelect";
@@ -21,7 +22,7 @@ export default function SideBar() {
   return (
     <>
       {show ? (
-        <div className="w-96 h-fit rounded-r-2xl drop-shadow-lg bg-gray-100 p-4 pb-6 flex flex-col items-center gap-6 absolute md:relative z-20 ">
+        <div className="w-96 h-fit  md:overflow-y-auto rounded-r-2xl drop-shadow-lg bg-gray-100 p-4 pb-6 flex flex-col items-center gap-6 absolute md:relative z-20 ">
           <div className="absolute top-2 left-2">
             <Hamburger toggled={show} onToggle={setShow} />
           </div>
@@ -61,6 +62,14 @@ export default function SideBar() {
           </DropdownRouteSelect>
           <RouteSelect Icon={FaChartLine} name="Analytics" route="analytics" />
           <RouteSelect Icon={FaMoneyBill} name="Earning" route="earnings" />
+          <div className="w-full h-[2px] mt-10 px-3 xl:hidden">
+            <div className="w-full h-full bg-gray-300 "></div>
+          </div>
+          <div className="flex flex-col xl:hidden gap-6 pt-8">
+            <RouteSelect Icon={FaLink} name="Homepage" route="" />
+            <RouteSelect Icon={FaLink} name="Explore" route="explore" />
+            <RouteSelect Icon={FaLink} name="About" route="about" />
+          </div>
           <div className="w-full h-[2px] mt-10 px-3">
             <div className="w-full h-full bg-gray-300 "></div>
           </div>
