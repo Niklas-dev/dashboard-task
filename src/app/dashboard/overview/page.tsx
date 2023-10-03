@@ -3,13 +3,11 @@ import DashboardIncomeInfoContainer from "@/components/DashboardIncomeInfoContai
 import DashboardInfoContainer from "@/components/DashboardInfoContainer";
 import DashboardRouteSwitch from "@/components/DashboardRouteSwitch";
 import PerformanceListContainer from "@/components/PerformanceListContainer";
+import StatisticsContainer from "@/components/StatisticsContainer";
 import TransactionListContainer from "@/components/TransactionListContainer";
-import { performanceData, transactionData } from "@/mock-data/data";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { performanceData, statData, transactionData } from "@/mock-data/data";
 
 export default function Page() {
-  const pathname = usePathname();
   return (
     <div className="p-2 flex flex-col gap-5">
       <h1 className="text-4xl font-semibold mt-20">Dashboard</h1>
@@ -37,6 +35,9 @@ export default function Page() {
       <div className="flex flex-row flex-wrap justify-between gap-6 pr-2 md:pr-10 lg:pr-28">
         <TransactionListContainer data={transactionData} />
         <PerformanceListContainer data={performanceData} />
+      </div>
+      <div className="flex flex-col pr-28">
+        <StatisticsContainer data={statData} />
       </div>
     </div>
   );

@@ -61,3 +61,7 @@ export interface ListHeaderProps {
   name: string;
   route: string;
 }
+
+export interface StatisticsContainerProps {
+  data: object[];
+}
