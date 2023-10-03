@@ -10,7 +10,7 @@ export default function TransactionRow({ transaction }: TransactionRowProps) {
         <p className="text-lg">{transaction.transaction.name}</p>
         <p className="text-base font-light">{transaction.transaction.id}</p>
       </th>
-      <td className="px-6 py-4 capitalize border-t-2 text-lg border-b-2 border-gray-200  h-20">
+      <td className="px-6 py-4 capitalize border-t-2 text-lg border-b-2 border-gray-200  h-20 text-green-600">
         {transaction.amount} NOK
       </td>
       <td className="px-6 py-4 border-t-2 border-b-2 text-lg border-gray-200 md:flex hidden h-24  flex-row items-center">

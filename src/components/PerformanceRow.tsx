@@ -17,7 +17,7 @@ export default function PerformanceRow({ performance }: PerformanceRowProps) {
         />
         <p className="text-lg">{performance.service}</p>
       </th>
-      <td className="px-6 py-4 capitalize border-t-2 text-lg border-b-2 border-gray-200  h-20">
+      <td className="px-6 py-4 capitalize border-t-2 text-lg border-b-2 border-gray-200  h-20 text-green-600">
         {performance.profit} NOK
       </td>
 
