@@ -66,3 +66,7 @@ export interface ListHeaderProps {
 export interface StatisticsContainerProps {
   data: object[];
 }
+
+export interface UserProfileAvatarProps {
+  image: StaticImageData;
+}

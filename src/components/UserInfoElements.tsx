@@ -1,6 +1,7 @@
 import { FaBell, FaChevronDown, FaSearch, FaPlus } from "react-icons/fa";
 import Image from "next/image";
 import Avatar from "../assets/avatar.png";
+import UserProfileAvatar from "./UserProfileAvatar";
 export default function UserInfoElements() {
   return (
     <div className="flex flex-row items-center gap-4">
@@ -16,16 +17,7 @@ export default function UserInfoElements() {
         <FaBell size={"1.2rem"} />
         <div className="absolute bg-green-500 h-4 w-4 rounded-full top-0 right-0"></div>
       </button>
-      <div className="flex flex-row items-center gap-2">
-        <Image
-          className="rounded-full h-10 w-10"
-          height={100}
-          width={100}
-          alt="avatar"
-          src={Avatar}
-        />
-        <FaChevronDown />
-      </div>
+      <UserProfileAvatar image={Avatar} />
     </div>
   );
 }
