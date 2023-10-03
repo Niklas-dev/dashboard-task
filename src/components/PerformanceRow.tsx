@@ -5,10 +5,10 @@ export default function PerformanceRow({ performance }: PerformanceRowProps) {
     <tr className=" cursor-pointer ">
       <th
         scope="row"
-        className="px-6 py-4 font-medium  whitespace-nowrap  capitalize rounded-l-xl border-2 border-r-0 border-gray-200 h-20 flex flex-row items-center gap-2"
+        className="px-2 md:px-6 py-4 font-medium  whitespace-nowrap  capitalize rounded-l-xl border-2 border-r-0 border-gray-200 h-24 flex flex-row items-center gap-2"
       >
         <Image
-          className="h-14 w-14 rounded-lg"
+          className="h-14 w-14 rounded-lg hidden md:block"
           height={50}
           width={50}
           alt="service"
@@ -20,7 +20,7 @@ export default function PerformanceRow({ performance }: PerformanceRowProps) {
         {performance.profit} NOK
       </td>
 
-      <td className="px-6 py-4 border-l-0 border-2 text-lg border-gray-200 rounded-r-xl h-20 ">
+      <td className="px-2 md:px-6 py-4 border-l-0 border-2 text-lg border-gray-200 rounded-r-xl h-20 ">
         <div
           className={`${
             (performance.status == "Pending" && "bg-red-600 text-red-800") ||

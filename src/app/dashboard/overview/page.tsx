@@ -34,7 +34,7 @@ export default function Page() {
           trend={50}
         />
       </div>
-      <div className="flex flex-row flex-wrap justify-between gap-6 pr-28">
+      <div className="flex flex-row flex-wrap justify-between gap-6 pr-2 md:pr-10 lg:pr-28">
         <TransactionListContainer data={transactionData} />
         <PerformanceListContainer data={performanceData} />
       </div>
