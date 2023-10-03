@@ -77,7 +77,25 @@ export const performanceData: PerformanceData[] = [
     status: "Pending",
   },
   {
-    service: "Test Ser3",
+    service: "Test Ser4",
+    profit: 1000,
+    image: Avatar,
+    status: "Ongoing",
+  },
+  {
+    service: "Test Ser5",
+    profit: 1000,
+    image: Avatar,
+    status: "Ongoing",
+  },
+  {
+    service: "Test Ser6",
+    profit: 1000,
+    image: Avatar,
+    status: "Ongoing",
+  },
+  {
+    service: "Test Ser7",
     profit: 1000,
     image: Avatar,
     status: "Ongoing",
