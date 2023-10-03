@@ -70,3 +70,7 @@ export interface StatisticsContainerProps {
 export interface UserProfileAvatarProps {
   image: StaticImageData;
 }
+
+export interface StatisticsChartProps {
+  data: object[];
+}
